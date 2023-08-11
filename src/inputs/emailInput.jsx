@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function EmailInput({ inputTitle }) {
+export default function EmailInput({ title }) {
     const [email, setEmail] = useState('')
     return(
         <label>
-            {inputTitle}
+            {title}
             <input
             type="email"
             value={email}
