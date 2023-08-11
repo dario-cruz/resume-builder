@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function textInput({ title }) {
+export default function TextInput({ title }) {
     const [input, setInput] = useState('')
 
     return (
