@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function TextInput({ title }) {
+export default function JobDetails({ title }) {
     const [input, setInput] = useState('')
 
     return (

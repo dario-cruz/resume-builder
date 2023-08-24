@@ -1,7 +1,8 @@
 import { useState } from "react";
 import NameInput from './inputs/nameInput'
+import EmailInput from "./inputs/emailInput";
 
-export default function ResumeForm( ) {
+export default function ResumeForm() {
     const handleSubmit = (e) => {
         //Prevent the form from refreshing the page and loosing the users state in the application. 
         e.preventDefault()
@@ -9,7 +10,10 @@ export default function ResumeForm( ) {
 
     return(
         <form onSubmit={handleSubmit}>
-            <NameInput labelTitle="Name" />
+            <NameInput labelTitle="First Name" />
+            <NameInput labelTitle="Last Name" />
+            <EmailInput title="Email" />
+            
         </form>
     )
 }
