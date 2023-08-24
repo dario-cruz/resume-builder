@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export default function EmailInput({ title }) {
-    const [email, setEmail] = useState('')
+const [email, setEmail] = useState('')
+
+function EmailInput({ title }) {
     return(
         <label>
             {title}
@@ -13,3 +14,6 @@ export default function EmailInput({ title }) {
         </label>
     )
 }
+
+export default {EmailInput, email}
+
