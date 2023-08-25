@@ -13,7 +13,6 @@ export default function ResumeForm() {
             <NameInput labelTitle="First Name" />
             <NameInput labelTitle="Last Name" />
             <EmailInput title="Email" />
-            
         </form>
     )
 }
