@@ -1,12 +1,13 @@
 import { useState } from "react";
+import React from "react";
 
-const [email, setEmail] = useState('')
-
-function EmailInput({ title }) {
+export default function EmailInput({ title = 'placeholder' }) {
+    const [email, setEmail] = useState('')
     return(
         <label>
             {title}
             <input
+            id='email-input'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -14,6 +15,3 @@ function EmailInput({ title }) {
         </label>
     )
 }
-
-export default {EmailInput, email}
-

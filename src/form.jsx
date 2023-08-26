@@ -1,6 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import NameInput from './inputs/nameInput'
 import EmailInput from "./inputs/emailInput";
+import DateInput from './inputs/dateInput';
 
 export default function ResumeForm() {
     const handleSubmit = (e) => {
@@ -9,10 +10,12 @@ export default function ResumeForm() {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form id='resume-form' onSubmit={handleSubmit}>
             <NameInput labelTitle="First Name" />
             <NameInput labelTitle="Last Name" />
             <EmailInput title="Email" />
+            <DateInput title='Start Date'/>
+            <DateInput title='End Date' />
         </form>
     )
 }
