@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import React from 'react'
 
 export default function DateInput({ title = 'placeholder' }) {
     // Get the current date so that we may apply it to the date form. 
