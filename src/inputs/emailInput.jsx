@@ -1,15 +1,11 @@
-import { useState } from "react";
-
-export default function EmailInput({ title = 'placeholder' }) {
-    const [email, setEmail] = useState('')
+export default function EmailInput({ title, updateFunc}) {
     return(
         <label>
             {title}
             <input
             id='email-input'
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => updateFunc(e.target.value)}
             />
         </label>
     )
