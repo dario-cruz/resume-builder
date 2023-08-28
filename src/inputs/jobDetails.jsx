@@ -6,11 +6,13 @@ export default function JobDetails({ title }) {
     return (
         <label>
             {title}
+
             <textarea
             name={title}
             value={input}
             onChange={(e) => setInput(e.target.value)}
             />
+            
         </label>
     )
 }
