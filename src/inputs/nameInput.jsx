@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function NameInput({ labelTitle = 'PlaceHolder' }) {
+export default function NameInput({ labelTitle }) {
   const [name, setName]= useState('')
   return (
     <label>

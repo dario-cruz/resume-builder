@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function JobDetails({ title }) {
+export default function JobDetails({ title, updateFunc}) {
     const [input, setInput] = useState('')
 
     return (
@@ -10,9 +10,9 @@ export default function JobDetails({ title }) {
             <textarea
             name={title}
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => updateFunc('jobOneDetails', e.target.value)}
             />
-            
+
         </label>
     )
 }

@@ -5,7 +5,7 @@ export default function EmailInput({ title, updateFunc}) {
             <input
             id='email-input'
             type="email"
-            onChange={(e) => updateFunc(e.target.value)}
+            onChange={(e) => updateFunc('email', e.target.value)}
             />
         </label>
     )

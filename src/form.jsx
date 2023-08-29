@@ -1,6 +1,6 @@
 import { useState } from "react";
-import NameInput from './inputs/nameInput'
-import EmailInput from "./inputs/emailInput";
+import NameInput from './inputs/nameInput';
+import EmailInput from './inputs/emailInput';
 import DateInput from './inputs/dateInput';
 
 export default function ResumeForm() {
@@ -13,24 +13,31 @@ export default function ResumeForm() {
     const [jobThreeDetails, setJobThreeDetails] = useState('')
     
     // Func for updating email value.
-    const updateEmailValue =  (value) => {
-        setEmail(value)
-    }
-    const updateFirstName = (value) => {
-        setFname(value)
-    }
-    const updateLastName = (value) => {
-        setLname(value)
-    }
-    const updateJobOneDetails = (value) => {
-        setJobOneDetails(value)
-    }
-    const updateJobTwoDetails = (value) => {
-        setJobTwoDetails(value)
-    }
-    const updateJobThreeDetails = (value) => {
-        setJobThreeDetails(value)
-    }
+   const updateStates = (fieldName, newValue) => {
+        switch(fieldName) {
+            case 'email':
+                setEmail(newValue)
+                console.log(email)
+                break
+            case 'fname':
+                setFname(newValue)
+                break
+            case 'lname':
+                setLname(newValue)
+                break
+            case 'jobOneDetails':
+                setJobOneDetails(newValue)
+                break
+            case 'jobTwoDetails':
+                setJobTwoDetails(newValue)
+                break
+            case 'jobThreeDetails':
+                setJobThreeDetails(newValue)
+                break
+            default:
+                break
+        }
+   }
 
     // Form submission behaviors. 
     const handleSubmit = (e) => {
@@ -43,7 +50,7 @@ export default function ResumeForm() {
         <form id='resume-form' onSubmit={handleSubmit}>
             <NameInput labelTitle="First Name" />
             <NameInput labelTitle="Last Name" />
-            <EmailInput title="Email" updateFunc={updateEmailValue}/>
+            <EmailInput title="Email" updateFunc={updateStates}/>
             <DateInput title='Start Date'/>
             <DateInput title='End Date' />
         </form>
