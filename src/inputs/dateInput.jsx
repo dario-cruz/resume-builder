@@ -6,9 +6,9 @@ export default function DateInput({ title = 'placeholder' }) {
     const formattedDate = currentDate.toISOString().slice(0, 10)
     const [date, setDate] = useState(formattedDate)
     return (
-        <label>
+        <label className='input-label'>
             {title}
-            <input type='date' name={title} value={date} min={date}
+            <input className='date-input' type='date' name={title} value={date} min={date}
             onChange={(e) => setDate(e.target.value)}
             />
         </label>
