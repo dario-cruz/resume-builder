@@ -1,15 +1,12 @@
-import { useState } from "react";
-
-export default function NameInput({ labelTitle }) {
-  const [name, setName]= useState('')
+export default function NameInput({ labelTitle, updateFunc, isFirstName = false }) {
+  
   return (
     <label>
       { labelTitle }
       <input
       className="form-input"
       type="text"
-      value={name}
-      onChange={(e) => setName(e.target.value)}
+      onChange={(e) => isFirstName ? updateFunc('fname', e.target.value) : updateFunc('lname', e.target.value)}
       />
     </label>
   )

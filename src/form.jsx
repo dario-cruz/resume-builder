@@ -48,8 +48,8 @@ export default function ResumeForm() {
 
     return(
         <form id='resume-form' onSubmit={handleSubmit}>
-            <NameInput labelTitle="First Name" />
-            <NameInput labelTitle="Last Name" />
+            <NameInput labelTitle="First Name" updateFunc={updateStates} isFirstName = 'true' />
+            <NameInput labelTitle="Last Name" updateFunc={updateStates} isFirstName = 'false'/>
             <EmailInput title="Email" updateFunc={updateStates}/>
             <DateInput title='Start Date'/>
             <DateInput title='End Date' />
