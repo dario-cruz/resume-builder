@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import resumeData from '../data/resumeData'
 
 export default function JobItem() {
     const [startDate, setStartDate] = useState('')
@@ -18,6 +19,14 @@ export default function JobItem() {
         // Prevent the default form behavior. 
         // Stop page from refreshing and loosing user data. 
         e.prevent.default()
+
+        // Update the resumeData object with the values from the form. 
+        resumeData['job-' + {jobTitle}] = {
+            title : {jobTitle},
+            startdate : {startDate},
+            enddate : {endDate},
+            details : {jobDetails}
+        }
 
     }
 
