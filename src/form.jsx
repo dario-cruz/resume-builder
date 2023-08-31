@@ -21,9 +21,11 @@ export default function ResumeForm() {
                 break
             case 'fname':
                 setFname(newValue)
+                console.log(fname)
                 break
             case 'lname':
                 setLname(newValue)
+                console.log(lname)
                 break
             case 'jobOneDetails':
                 setJobOneDetails(newValue)
@@ -51,8 +53,8 @@ export default function ResumeForm() {
             <NameInput labelTitle="First Name" updateFunc={updateStates} isFirstName = 'true' />
             <NameInput labelTitle="Last Name" updateFunc={updateStates} isFirstName = 'false'/>
             <EmailInput title="Email" updateFunc={updateStates}/>
-            <DateInput title='Start Date'/>
-            <DateInput title='End Date' />
+            <DateInput title='Start Date' updateFunc={updateStates}/>
+            <DateInput title='End Date' updateFunc={updateStates}/>
         </form>
     )
 }

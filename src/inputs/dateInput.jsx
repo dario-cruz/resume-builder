@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function DateInput({ title = 'placeholder' }) {
+export default function DateInput({ title = 'placeholder', updateFunc }) {
     // Get the current date so that we may apply it to the date form. 
     const currentDate = new Date()
     const formattedDate = currentDate.toISOString().slice(0, 10)
