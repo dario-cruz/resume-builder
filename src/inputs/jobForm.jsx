@@ -21,11 +21,11 @@ export default function JobItem() {
         e.prevent.default()
 
         // Update the resumeData object with the values from the form. 
-        resumeData['job-' + {jobTitle}] = {
+        resumeData.jobs.push({
             title : {jobTitle},
             startdate : {startDate},
             enddate : {endDate},
-            details : {jobDetails}
+            details : {jobDetails}})
         }
 
     }
