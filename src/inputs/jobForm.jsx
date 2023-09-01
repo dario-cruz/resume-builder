@@ -26,8 +26,6 @@ export default function JobItem() {
             startdate : {startDate},
             enddate : {endDate},
             details : {jobDetails}})
-        }
-
     }
 
     return (
