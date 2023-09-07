@@ -3,8 +3,9 @@ const resumeData = {
     firstname: '',
     lastname: '',
     email: '',
+    website: '',
+    location: '',
     jobs : []
-
 }
 
 
