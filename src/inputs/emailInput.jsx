@@ -1,4 +1,4 @@
-export default function EmailInput({ title, updateFunc}) {
+export default function EmailInput({ title, object}) {
     return(
         <label className='input-label'>
             {title}

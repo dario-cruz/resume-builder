@@ -1,8 +1,5 @@
 import { useState } from "react";
 import resumeData from "./data/resumeData";
-import NameInput from './inputs/nameInput';
-import EmailInput from './inputs/emailInput';
-import DateInput from './inputs/dateInput';
 
 export default function ResumeForm() {
     // Define all of the states that the child components will use. 
@@ -24,16 +21,30 @@ export default function ResumeForm() {
         resumeData.lastname = lname
         resumeData.website = website
         resumeData.location = location
-        
+
     }
 
     return(
         <form id='resume-form' onSubmit={handleSubmit}>
-            {/* <NameInput labelTitle="First Name" updateFunc={updateStates} isFirstName = 'true' /> */}
-            {/* <NameInput labelTitle="Last Name" updateFunc={updateStates} isFirstName = 'false'/> */}
-            {/* <EmailInput title="Email" updateFunc={updateStates}/> */}
-            {/* <DateInput title='Start Date' updateFunc={updateStates}/> */}
-            {/* <DateInput title='End Date' updateFunc={updateStates}/> */}
+            <label>
+                First Name:
+                <input type='text' className='form-input'
+                onChange={e => setFname(e.target.value)}/>
+            </label>
+            <label>
+                Last Name:
+                <input type='text' className='form-input'
+                onChange={e => setLname(e.target.value)}/>
+            </label>
+            <label>
+                Email:
+                <input type='email' className='form-input' 
+                onChange={e => setEmail(e.target.value)}/>
+            </label>
+
+
+
+
         </form>
     )
 }
