@@ -25,7 +25,7 @@ export default function ResumeForm() {
     }
 
     return(
-        <form id='resume-form' onSubmit={handleSubmit}>
+        <form id='resume-form' className='resume-form' onSubmit={handleSubmit}>
             <label>
                 First Name:
                 <input type='text' className='form-input'
