@@ -28,17 +28,17 @@ export default function ResumeForm() {
         <form id='resume-form' className='resume-form' onSubmit={handleSubmit}>
             <label>
                 First Name:
-                <input type='text' className='form-input'
+                <input type='text' name='fname' className='form-input'
                 onChange={e => setFname(e.target.value)}/>
             </label>
             <label>
                 Last Name:
-                <input type='text' className='form-input'
+                <input type='text' name='lname' className='form-input'
                 onChange={e => setLname(e.target.value)}/>
             </label>
             <label>
                 Email:
-                <input type='email' className='form-input' 
+                <input type='email' name='email' className='form-input' 
                 onChange={e => setEmail(e.target.value)}/>
             </label>
 
