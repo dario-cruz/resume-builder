@@ -1,12 +1,13 @@
 import { useState } from "react";
 import resumeData from "./data/resumeData";
 import FormButton from "./page_elements/form-button";
+import NormalButton from "./page_elements/normal-button";
 
 export default function ResumeForm() {
     // Define all of the states that the child components will use. 
-    const [email, setEmail] = useState('example@aol.com')
     const [fname, setFname] = useState('John')
     const [lname, setLname] = useState('Smith')
+    const [email, setEmail] = useState('example@aol.com')
     const [website, setWebsite] = useState('theodinproject.com')
     const [location, setLocation] = useState('Bronx, NY')
     const [phone, setPhone] = useState('555-555-5555')
@@ -25,6 +26,17 @@ export default function ResumeForm() {
         resumeData.location = location
         resumeData.phone = phone
 
+    }
+
+    // Create func to reset the States of inputs and form values.
+    const resetInputValues = () => {
+        // Reset all form values.
+        setFname('')
+        setLname('')
+        setEmail('')
+        setWebsite('')
+        setLocation('')
+        setPhone('')
     }
 
     return(
@@ -66,6 +78,7 @@ export default function ResumeForm() {
                 onChange={e => setLocation(e.target.value)}/>
             </label>
             <FormButton text={"Submit"} formId={'resume-form'} />
+            <NormalButton text={'Cancel'} type={'button'} onClick={resetInputValues}/>
 
 
 
