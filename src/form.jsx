@@ -40,7 +40,7 @@ export default function ResumeForm() {
     }
 
     return(
-        <form id='resume-form' className='resume-form' onSubmit={handleSubmit}>
+        <form id='resume-form' className='resume-form' onSubmit={handleSubmit} autoComplete='on'>
             <label className='input-label'>
                 First Name:
                 <input type='text' name='fname' className='form-input'

@@ -29,7 +29,7 @@ export default function JobItem() {
     }
 
     return (
-        <form className='job-form' onSubmit={handleSubmit}>
+        <form className='job-form' onSubmit={handleSubmit} autoComplete='off'>
             <label>
                 Job Title:
                 <input 
