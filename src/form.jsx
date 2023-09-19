@@ -1,7 +1,9 @@
 import { useState } from "react";
+import './form.css';
 import resumeData from "./data/resumeData";
 import FormButton from "./page_elements/form-button";
 import NormalButton from "./page_elements/normal-button";
+
 
 export default function ResumeForm() {
     // Define all of the states that the child components will use. 
@@ -61,19 +63,19 @@ export default function ResumeForm() {
             </label>
             <label className='input-label'>
                 Website:
-                <input type='url' name='website' className='website-input'
+                <input type='url' name='website' className='form-input'
                 value={website}
                 onChange={e => setWebsite(e.target.value)}/>
             </label>
             <label className='input-label'>
                 Phone Number:
-                <input type='tel' name='phone' className='phone-input'
+                <input type='tel' name='phone' className='form-input'
                 value={phone}
                 onChange={e => setPhone(e.target.value)}/>
             </label>
             <label>
                 Location:
-                <input type='text' name='location' className='location-input'
+                <input type='text' name='location' className='form-input'
                 value={location}
                 onChange={e => setLocation(e.target.value)}/>
             </label>
