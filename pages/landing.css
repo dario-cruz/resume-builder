@@ -1,0 +1,32 @@
+.Landing-Section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+
+.Landing-Image-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Landing-Image {
+    height: 300px;
+
+}
+
+
+.Landing-Section-Text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.Landing-Header {
+    display: flex;
+    justify-content: right;
+}
+.Landing-Text {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
