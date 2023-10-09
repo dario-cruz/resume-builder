@@ -1,0 +1,19 @@
+nav.Landing-Nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
+    width: 100vw;
+    height: 5em;
+}
+
+nav > div.Nav-Links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav.Landing-Nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
