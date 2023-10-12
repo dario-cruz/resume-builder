@@ -1,7 +1,12 @@
 .Landing-Section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 500px 1fr;
+    grid-template-areas:
+    ". ."
+    "text image"
+    ". .";
+    height: calc(100vh - 5em);
 }
 
 /* Image Related Elements */
@@ -9,17 +14,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: image;
 }
 .Landing-Image {
     height: 300px;
 
 }
 
-
+/* Landing Text Elements */
 .Landing-Section-Text {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-area: text;
 }
 .Landing-Header-Container{
     display: flex;
