@@ -17,3 +17,12 @@ nav.Landing-Nav a {
     color: black;
     cursor: pointer;
 }
+
+.Nav-Title {
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    font-size: 50pt;
+    padding: 8px;
+    /* justify-conteKeydown:nt: center; */
+    align-items: center;
+}

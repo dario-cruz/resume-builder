@@ -1,6 +1,6 @@
 import './landing.css'
-import NormalText from '../src/page_elements/normal-text'
-import HeaderText from '../src/page_elements/header-text'
+import NormalText from '../page_elements/normal-text'
+import HeaderText from '../page_elements/header-text'
 
 function LandingImage() {
     return (

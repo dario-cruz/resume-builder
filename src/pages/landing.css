@@ -4,7 +4,7 @@
     grid-template-rows: 1fr;
 }
 
-
+/* Image Related Elements */
 .Landing-Image-Container {
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 import './App.css'
 import ResumeForm from './form'
-import Landing from '../pages/landing'
+import Landing from './pages/landing'
 import NavBar from './page_elements/navbar'
 
 function App() {
