@@ -1,4 +1,4 @@
-import './landing.css'
+import './landing-page.css'
 import NormalText from '../page_elements/normal-text'
 import HeaderText from '../page_elements/header-text'
 

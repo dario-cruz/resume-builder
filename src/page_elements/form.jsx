@@ -1,8 +1,8 @@
 import { useState } from "react";
 import './form.css';
-import resumeData from "./data/resumeData";
-import FormButton from "./page_elements/form-button";
-import NormalButton from "./page_elements/normal-button";
+import resumeData from '../data/resumeData'
+import FormButton from "../page_elements/form-button";
+import NormalButton from "../page_elements/normal-button";
 
 
 export default function ResumeForm() {
