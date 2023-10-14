@@ -1,18 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
 .resume-form {
     display: inline-block;
-
+    grid-area: center;
 }
 
 .form-input {
     width: 10em;
     height: 2.5em;
 }
+
+
 
 

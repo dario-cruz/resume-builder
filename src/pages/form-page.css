@@ -2,5 +2,11 @@ section.form-page {
     height: 100vh;
     width: 100vw;
     display: grid;
-    
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 1f 500px 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". center ."
+    ". . .";
 }
+
