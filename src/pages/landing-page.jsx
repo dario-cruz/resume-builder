@@ -11,7 +11,7 @@ function LandingImage() {
 }
 
 
-export default function Landing() {
+export default function LandingPage() {
 
     return (
         <section className='Landing-Section'>

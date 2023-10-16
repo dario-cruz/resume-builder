@@ -1,5 +1,5 @@
 import './App.css'
-import Landing from './pages/landing-page'
+import LandingPage from './pages/landing-page'
 import NavBar from './page_elements/navbar'
 import FormPage from './pages/form-page'
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar />
       <div className='Main-Content'>
-        <Landing />
+        <LandingPage />
         <FormPage />
       </div>
     </>
