@@ -4,7 +4,6 @@ import resumeData from '../data/resumeData'
 import FormButton from "../page_elements/form-button";
 import NormalButton from "../page_elements/normal-button";
 
-
 export default function ResumeForm() {
     // Define all of the states that the child components will use. 
     const [fname, setFname] = useState('John')
@@ -80,7 +79,11 @@ export default function ResumeForm() {
                 onChange={e => setLocation(e.target.value)}/>
             </label>
             <FormButton text={"Submit"} formId={'resume-form'} />
-            <NormalButton text={'Cancel'} type={'button'} onClick={resetInputValues}/>
+            <NormalButton 
+            text={'Reset'} 
+            type={'reset'} 
+            funcToRun={resetInputValues}
+            />
 
 
 
