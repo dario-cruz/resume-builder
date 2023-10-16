@@ -17,5 +17,14 @@
     align-items: center;
 }
 
+div.form-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.form-button-container > button {
+    height: 50px ;
+    width: 100px;
+    margin: 5px;
+}
