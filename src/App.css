@@ -3,3 +3,14 @@
   margin: 0;
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section.Landing-Section {
+  scroll-snap-align: center;
+}
+
+section.form-page {
+  scroll-snap-align: center;
+}

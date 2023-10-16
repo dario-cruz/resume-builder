@@ -1,6 +1,7 @@
 import './landing-page.css'
 import NormalText from '../page_elements/normal-text'
 import HeaderText from '../page_elements/header-text'
+import NavBar from '../page_elements/navbar'
 
 function LandingImage() {
     return (
@@ -21,7 +22,7 @@ export default function LandingPage() {
                 </div>
                 <div className="Landing-Text-Container">
                     <NormalText content={
-                        'The Premier Way to Build Out Your Resume and Stand Out to Employers!'
+                    'The Premier Way to Build Out Your Resume and Stand Out to Employers!'
                     } elementClass={'Landing-Text'} />
                 </div>
             </div>

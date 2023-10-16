@@ -27,6 +27,9 @@ export default function ResumeForm() {
         resumeData.location = location
         resumeData.phone = phone
 
+        // Log the result.
+        console.log(resumeData)
+
     }
 
     // Create func to reset the States of inputs and form values.
@@ -62,7 +65,7 @@ export default function ResumeForm() {
             </label>
             <label className='input-label'>
                 Website:
-                <input type='url' name='website' className='form-input'
+                <input type='text' name='website' className='form-input'
                 value={website}
                 onChange={e => setWebsite(e.target.value)}/>
             </label>
