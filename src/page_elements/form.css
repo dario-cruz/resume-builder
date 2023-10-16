@@ -1,13 +1,21 @@
 .resume-form {
-    display: inline-block;
+    display: grid;
     grid-area: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
 }
 
 .form-input {
-    width: 10em;
+    width: 30em;
     height: 2.5em;
 }
 
+.resume-form > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

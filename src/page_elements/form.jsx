@@ -78,12 +78,14 @@ export default function ResumeForm() {
                 value={location}
                 onChange={e => setLocation(e.target.value)}/>
             </label>
-            <FormButton text={"Submit"} formId={'resume-form'} />
-            <NormalButton 
-            text={'Reset'} 
-            type={'reset'} 
-            funcToRun={resetInputValues}
-            />
+            <div className="form-button-container">
+                <FormButton text={"Submit"} formId={'resume-form'} />
+                <NormalButton 
+                text={'Reset'} 
+                type={'reset'} 
+                funcToRun={resetInputValues}
+                />
+            </div>
 
 
 
