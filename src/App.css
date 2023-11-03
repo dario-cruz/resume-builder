@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-html {
+/* html {
   scroll-snap-type: y mandatory;
 }
 
@@ -13,4 +13,4 @@ section.Landing-Section {
 
 section.form-page {
   scroll-snap-align: center;
-}
+} */

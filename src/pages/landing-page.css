@@ -1,47 +1,34 @@
-.Landing-Section {
+div.landing {
+    height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 95vw 1fr;
+    grid-template-rows: 1fr 80vh 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". center ."
+    ". . .";
+}
+
+.Landing-Section {
+    grid-area: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 500px 1fr;
-    grid-template-areas:
-    ". ."
-    "text image"
-    ". .";
-    height: calc(100vh - 5em);
 }
 
-/* Image Related Elements */
-.Landing-Image-Container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: image;
-}
-.Landing-Image {
-    height: 300px;
-
-}
-
-/* Landing Text Elements */
 .Landing-Section-Text {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-area: text;
+    grid-template-rows: 2fr 1fr;
 }
-.Landing-Header-Container{
-    display: flex;
-    justify-content: right;
-    align-items: flex-end;
+
+.Landing-Image-Container {
+    overflow: hidden;
+
+    border-radius: 20px;
 }
-.Landing-Header {
-    font-size: 40pt;
-}
-.Landing-Text-Container{
-    display: flex;
-    justify-content: right;
-    text-align: right;
-    align-items: flex-start;
-}
-.Landing-Text {
-    font-size: large;
+
+.Landing-Image {
+    top: 115px;
+    width: 100%;
 }
