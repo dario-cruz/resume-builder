@@ -7,11 +7,11 @@ import NavBar from './page_elements/navbar'
 function App() {
 
   return (
-      <div className='Main-Content'>
-        <NavBar/>
-        <LandingPage/>
-        <FormPage/>
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' Component={LandingPage}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
