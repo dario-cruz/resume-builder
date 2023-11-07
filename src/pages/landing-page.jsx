@@ -5,7 +5,7 @@ import HeaderText from '../page_elements/header-text'
 function LandingImage() {
     return (
         <div className='Landing-Image-Container'>
-            <img className='Landing-Image' src='../src/images/resume-stock-photo.jpg' alt='Resumo Landing Image'/>
+            <img className='Landing-Image' src='../src/images/resume-writing.jpg' alt='Resumo Landing Image'/>
         </div>
     )
 }
@@ -20,10 +20,10 @@ export default function LandingPage() {
             <section className='Landing-Section'>
                 <div className='Landing-Section-Text'>
                     <div className='Landing-Header-Container'>
-                        <HeaderText content={ headingText } elementClass={'Landing-Header'} />
+                        <HeaderText className='Landing-Header' content={ headingText } elementClass={'Landing-Header'} />
                     </div>
                     <div className="Landing-Text-Container">
-                        <NormalText content={ thePitch } elementClass={'Landing-Text'} />
+                        <NormalText className='Landing-Text' content={ thePitch } elementClass={'Landing-Text'} />
                     </div>
                 </div>
                 <LandingImage />

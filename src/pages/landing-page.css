@@ -27,8 +27,20 @@ div.landing {
 
     border-radius: 20px;
 }
-
 .Landing-Image {
-    top: 115px;
     width: 100%;
+    height: auto;
+}
+
+.Landing-Header {
+    font-size: 90pt;
+    line-height: .8;
+    text-transform: uppercase;
+}
+
+.Landing-Text {
+    font-size: 40pt;
+
+    line-height: 1;
+
 }
