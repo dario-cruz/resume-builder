@@ -15,11 +15,16 @@ div.landing {
     grid-gap: 5px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    border-top: 4px solid wheat;
+    border-bottom: 4px solid wheat;
+    padding: 5px;
+
 }
 
 .Landing-Section-Text {
     display: grid;
     grid-template-rows: 2fr 1fr;
+    
 }
 
 .Landing-Image-Container {
@@ -36,11 +41,14 @@ div.landing {
     font-size: 90pt;
     line-height: .8;
     text-transform: uppercase;
+    color: beige;
+
+
 }
 
 .Landing-Text {
     font-size: 40pt;
-
     line-height: 1;
-
+    color: beige;
+    
 }

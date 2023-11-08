@@ -5,14 +5,5 @@
 }
 
 body {
-  /* overflow: hidden; */
-}
-
-h1 {
-  font-family: 'Teko', sans-serif;
-  font-weight: 700;
-}
-p {
-  font-family: 'Teko', sans-serif;
-  font-weight: 400;
+  background-color: black;
 }
